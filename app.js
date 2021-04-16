@@ -3,8 +3,6 @@ const app = express();
 const listRoutes = require("./routes/list")
 
 app.use(express.json());
-app.use("/list", listRoutes);
-
-
+app.use("/items", listRoutes);
 
 module.exports = app;
